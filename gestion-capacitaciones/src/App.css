@@ -1,0 +1,364 @@
+/*inicio*/
+/* Estilos generales */
+.logo{
+  text-align: center;
+  width: 300px; /* Cambia el ancho de la imagen */
+  height: auto; /* Mantén la relación de aspecto original */
+  border-radius: 10px; /* Agrega esquinas redondeadas al borde */
+  
+}
+body {
+  background: url('./pages/fondo.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  margin: 5;
+  padding: 5;
+  color: #ffffff; /* Color de texto negro */
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #e4bdfa;
+  color: #9527fc75; /* Color de texto negro */
+  text-align: center;
+  padding: 10px 0;
+  border-top: 5px solid #8400ff75;
+  border-bottom: 5px solid #8400ff75;
+  border: 5px solid #8400ff75;
+}
+
+/* Estilos de la sección Características Principales */
+.features {
+  text-align: center;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ocultar el título "Características Principales" */
+.features h2 {
+  display: none;
+}
+
+.feature {
+  margin: 20px;
+  padding: 30px; /* Aumenté el tamaño del padding para hacer los cuadros más grandes */
+  border: 1px solid #b257fc;
+  border-radius: 5px;
+  background-color: #f2b3fa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 350px; /* Aumenté el ancho máximo de los cuadros */
+  text-align: center;
+}
+
+.feature img {
+  max-width: 100px; /* Aumenté el tamaño de la imagen */
+  height: auto;
+}
+a {
+  text-decoration: none; /* Elimina la línea subrayada */
+  font-weight: bold; /* Aplica negrita al texto del enlace */
+  color: #8400ff; 
+  padding: 2px 4px; /* Ajusta el relleno para resaltar el texto */
+}
+/* Estilos de la sección del héroe */
+.hero {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+  color: #ffffff;
+}
+
+.centered-text {
+  max-width: 800px; /* Ajusta el ancho máximo para centrar el texto */
+  margin: 0 auto; /* Centra el texto horizontalmente */
+}
+/* Estilos de la sección Acerca de Nosotros */
+.about {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.centered-text {
+  max-width: 800px; /* Ajusta el ancho máximo para centrar el texto */
+  margin: 0 auto; /* Centra el texto horizontalmente */
+}
+/* Estilos del pie de página */
+footer {
+  background-color: #9122faea;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-bar {
+  background-color: #9122faea; /* Color de la barra verde */
+  text-align: center;
+  padding: 5px 0; /* Espacio adicional en la barra */
+}
+
+/* Estilos para el contenedor del título "Bienvenido al Sistema de Control de Tutorías de Titulación" */
+/* Estilos para el contenedor del título "Bienvenido al Sistema de Control de Tutorías de Titulación" */
+.hero .container {
+  background-color: #9122faea; /* Cambia el color de fondo según tus preferencias */
+  padding: 20px; /* Añade espacio de relleno alrededor del contenido */
+  border: 1px solid #9122faea; /* Agrega un borde alrededor del contenedor */
+  border-radius: 5px; /* Añade bordes redondeados al contenedor */
+  text-align: center; /* Centra el contenido en el contenedor */
+  display: inline-block; /* Hace que el contenedor se ajuste al ancho del texto */
+}
+
+/* Estilos para el contenedor del título "Acerca de Nosotros" */
+.about .container {
+  background-color: #9122faea; /* Cambia el color de fondo según tus preferencias */
+  padding: 20px; /* Añade espacio de relleno alrededor del contenido */
+  border: 1px solid #9122faea; /* Agrega un borde alrededor del contenedor */
+  border-radius: 5px; /* Añade bordes redondeados al contenedor */
+  text-align: center; /* Centra el contenido en el contenedor */
+  display: inline-block; /* Hace que el contenedor se ajuste al ancho del texto */
+}
+
+
+
+
+
+
+
+/*login*/
+/* Estilos CSS */
+body {
+  background: url('./pages/fondo.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* display: flex; hacia desbordar el coso*/
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-container {
+  background-color: #51185b;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  margin: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #b634f3; 
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #6200ff; /* Color más oscuro al pasar el cursor */
+}
+
+.hidden {
+  display: none;
+}
+
+/* Estilos para el mensaje de validación */
+#message {
+  background-color: #c573f5; /* Fondo violeta */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.register-link {
+  text-align: center;
+  margin-top: 10px; /* Añade espacio entre el cuadro de inicio de sesión y el enlace */
+}
+
+/*admin login*/
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #51185b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='submit'],
+button {
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='submit'] {
+  width: 100%;
+}
+
+input[type='submit'],
+button {
+  cursor: pointer;
+  background-color: #b634f3; 
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+input[type='submit']:hover,
+button:hover {
+  background-color: #6200ff;
+}
+
+.buttons {
+  text-align: center;
+}
+
+
+/* Estilos para el formulario de curso de CSS */
+
+/* Estilos generales */
+.formulario-curso {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #51185b;
+}
+
+h2 {
+  text-align: center;
+  /* color: #333; */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ver cursos*/
+.ver-cursos {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #51185b;
+}
+
+
+
+/*aceptar cursos*/
+.aceptar-cursos {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #51185b;
+}
+
+
+
+/*admin opciones*/
+.banner {
+  background-color: #51185b;
+  padding: 20px;
+}
+
+.banner-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.banner-contenido {
+  width: 45%;
+  background-color: #3a1975;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.banner-contenido h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.promocion-texto {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
